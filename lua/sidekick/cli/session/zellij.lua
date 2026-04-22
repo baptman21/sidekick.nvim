@@ -19,6 +19,14 @@ layout {
       {args}
    }
 }
+keybinds clear-defaults=true {
+    normal {
+        bind "Ctrl s" { SwitchToMode "scroll"; }
+    }
+    scroll {
+        bind "e" { EditScrollback; SwitchToMode "normal"; }
+    }
+}
 session_serialization false
 ]]
 
